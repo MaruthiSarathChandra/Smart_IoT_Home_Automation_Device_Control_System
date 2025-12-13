@@ -1,12 +1,12 @@
 from flask import Flask # creating a flask server
 from flask import request, redirect
 
-from src.light_controller_api.repo.connection import init_db
-from src.light_controller_api.controller.auth import auth_bp
+from backend.src.light_controller_api.repo.connection import init_db
+from backend.src.light_controller_api.controller.auth import auth_bp
 from config import Config
-from src.light_controller_api.service.jwt_service import validate_jwt_token
-from src.light_controller_api.controller.home_controller import home_bp
-from src.light_controller_api.controller.esp32_controller import esp32_bp
+from backend.src.light_controller_api.service.jwt_service import validate_jwt_token
+from backend.src.light_controller_api.controller.home_controller import home_bp
+from backend.src.light_controller_api.controller.esp32_controller import esp32_bp
 
 
 

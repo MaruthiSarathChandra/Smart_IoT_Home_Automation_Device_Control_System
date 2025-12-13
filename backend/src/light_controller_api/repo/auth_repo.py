@@ -1,9 +1,6 @@
-from typing import List, Optional
-
 from sqlalchemy import Boolean
 from sqlalchemy.orm import Session
-from typing import List, Dict
-from src.light_controller_api.entity.logindatabase import User
+from backend.src.light_controller_api.entity.logindatabase import User
 
 
 class UserRepository:

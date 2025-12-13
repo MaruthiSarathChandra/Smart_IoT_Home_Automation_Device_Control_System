@@ -1,10 +1,5 @@
-import requests
-from typing import Dict
-from flask import current_app, jsonify, Blueprint, request
-from src.light_controller_api.service.esp32_service import set_device, get_device, get_devices, register_device_in_esp32, delete_esp32_service, delete_device_in_esp32, get_availablity, register_esp32, get_all_esp32
-from src.light_controller_api.service.jwt_service import decode_jwt_token
-from src.light_controller_api.repo.connection import get_session
-
+from flask import jsonify, Blueprint, request
+from backend.src.light_controller_api.service.esp32_service import set_device, get_device, get_devices, register_device_in_esp32, delete_esp32_service, delete_device_in_esp32, get_availablity, register_esp32, get_all_esp32
 
 esp32_bp = Blueprint('esp32_bp', __name__)
 #esp32_url = current_app.config['ESP32_API_ENDPOINT']

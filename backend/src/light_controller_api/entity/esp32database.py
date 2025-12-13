@@ -1,6 +1,5 @@
 from sqlalchemy import Column, Integer, String, Boolean, ForeignKey
-from src.light_controller_api.repo.connection import Base
-from src.light_controller_api.entity.logindatabase import Base
+from backend.src.light_controller_api.entity.logindatabase import Base
 
 
 

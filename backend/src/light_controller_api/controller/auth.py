@@ -4,8 +4,8 @@ from flask import Blueprint, jsonify, request, render_template, redirect, make_r
 # use WTForms Form class, not tkinter
 from wtforms import Form, StringField, PasswordField, SubmitField
 from wtforms.validators import InputRequired, Length
-from src.light_controller_api.service.jwt_service import create_jwt_token, validate_jwt_token
-from src.light_controller_api.service.auth_service import AuthService
+from backend.src.light_controller_api.service.jwt_service import create_jwt_token, validate_jwt_token
+from backend.src.light_controller_api.service.auth_service import AuthService
 
 
 

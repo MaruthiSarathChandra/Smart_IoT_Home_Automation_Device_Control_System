@@ -1,11 +1,8 @@
-from codecs import replace_errors
-
-import src.light_controller_api
 from sqlalchemy import Boolean
-from werkzeug.security import generate_password_hash, check_password_hash
-from src.light_controller_api.repo.connection import get_session
-from src.light_controller_api.repo.auth_repo import UserRepository
-from src.light_controller_api.entity.logindatabase import User
+from werkzeug.security import generate_password_hash
+from backend.src.light_controller_api.repo.connection import get_session
+from backend.src.light_controller_api.repo.auth_repo import UserRepository
+from backend.src.light_controller_api.entity.logindatabase import User
 
 
 

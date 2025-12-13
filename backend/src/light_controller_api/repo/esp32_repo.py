@@ -1,8 +1,5 @@
-from flask import current_app, jsonify
-from typing import List, Optional
-from sqlalchemy import Boolean
 from sqlalchemy.orm import Session
-from src.light_controller_api.entity.esp32database import Esp32Device
+from backend.src.light_controller_api.entity.esp32database import Esp32Device
 
 
 class Esp32Repository:

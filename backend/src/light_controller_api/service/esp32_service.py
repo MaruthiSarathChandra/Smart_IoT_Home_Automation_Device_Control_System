@@ -1,9 +1,9 @@
 import requests
 from typing import Dict
-from flask import current_app, jsonify
+from flask import jsonify
 from typing import List, Optional
 from sqlalchemy import Boolean
-from src.light_controller_api.repo.esp32_repo import Esp32Repository
+from backend.src.light_controller_api.repo.esp32_repo import Esp32Repository
 from ..service.jwt_service import decode_jwt_token
 from ..repo.auth_repo import UserRepository
 from ..repo.connection import get_session
